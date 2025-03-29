@@ -22,7 +22,7 @@ include_terms = ["Early", "Entry", "Associate", "Apprentice", "New Grad", "Junio
 omitted_terms =  ["II", "III", "IV", "V", "senior", "sr", "lead", "director", "manager", "principal", "chief", "head", "vp", "vice president", "executive", "experienced", "seasoned", "Intern", "Internship"]
 
 # Load the list of companies from the Companies.txt file
-file_path = r"C:\Users\Yunushan\source\repos\job_scraper\Companies.txt"
+file_path = r"C:\Users\yunus\source\repos\job_scraper\Companies.txt"
 with open(file_path, 'r') as file:
     companies = [line.strip() for line in file.readlines()]
 

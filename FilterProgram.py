@@ -62,7 +62,7 @@ def filter_specific_csv(file_path):
 
 if __name__ == "__main__":
     # Specify the full path to your CSV file
-    file_path = r"C:\Users\Yunushan\source\repos\job_scraper\JobScraper3\UnfilteredJobs1.csv"  # Provide the full path to your CSV file
+    file_path = r"C:\Users\yunus\Source\Repos\job_scraper\LinkedIn_Job_Scrapes\LinkedInJobs_Run10.csv"  # Provide the full path to your CSV file
     
     if os.path.exists(file_path):
         filter_specific_csv(file_path)
