@@ -14,7 +14,7 @@ import urllib.parse
 from urllib.parse import urljoin
 
 # Configuration variables
-SCROLL_PAUSE_TIME = 0.5
+SCROLL_PAUSE_TIME = 0.2
 MAX_SCROLL_ATTEMPTS = 40
 DEBUG_MODE = False  # Set to True for debugging with first 5 companies, False for all companies
 
@@ -240,7 +240,7 @@ def scrape_jobs_for_company(company):
     return all_jobs
 
 all_scraped_jobs = []
-MAX_WORKERS = 10
+MAX_WORKERS = 8
 print(f"\nStarting scrape with {MAX_WORKERS} workers...")
 with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
     futures = {executor.submit(scrape_jobs_for_company, company): company for company in companies}
